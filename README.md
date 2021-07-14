@@ -12,3 +12,5 @@ https://moradi1412.github.io/RunBuddy/
 
 ## Contribution
 Made with ❤️ by [Mohammad Javid Moradi]
+
+### ©️2019 Run Buddy, Inc 

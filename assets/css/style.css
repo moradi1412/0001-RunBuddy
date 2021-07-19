@@ -118,18 +118,15 @@ header nav ul li a {
   font-size: 16px;
 }
 
-.intro {
-  text-align: center;
-}
-
 .section-title {
+  padding-bottom: 20px;
+  text-align: center;
+  margin: 0 auto 35px auto;
+  width: 50%;
   font-size: 55px;
   color: #024e76;
-  margin-bottom: 35px;
-  padding: 0px 100px 20px 100px;
   border-bottom: 3px solid;
   border-color: #fce138;
-  display: inline-block;
 }
 
 .primary-border {
@@ -146,11 +143,11 @@ header nav ul li a {
   width: 80%;
   font-size: 20px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .steps {
-  text-align: center;
-  background: #fce138;
+ background: #fce138;
 }
 
 .steps div {
@@ -177,9 +174,6 @@ header nav ul li a {
   font-size: 38px; 
 }
 
-.trainers {
-  text-align: center;
-  }
 
 .trainer {
   width: 900px;
@@ -226,7 +220,6 @@ header nav ul li a {
 }
 
 .contact {
-  text-align: center;
   background: #024e76;
 }
 
@@ -288,3 +281,6 @@ footer a {
   color : #024e76
 }
 
+.flex-row {
+  display: flex;
+}

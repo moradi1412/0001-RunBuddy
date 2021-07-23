@@ -1,8 +1,8 @@
 /* every element on the page to not have any margin or border unless we explicitly tell it to*/
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;  
 }
 
 
@@ -15,31 +15,34 @@ body {
 /* apply styles to <header> */
 header {
   padding: 20px 35px;
+  background-color: #39a6b2; 
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  position: -webkit-sticky;
   position: sticky;
+  position: -webkit-sticky; 
   top: 0;
   background-image: url(../image/hero-bg.jpg);
   background-size: cover;
-  background-position: center; 
   background-attachment: fixed; 
-  background-position: 80%;
-  background-color: #39a6b2; 
+  background-position: 80%;  
 }
 
 header h1 {
   font-weight: bold;
+  margin: 0;
   font-size: 36px;
   color: #fce138;
-  margin: 0;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 5);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
  }
 
 header a {
   text-decoration: none;
   color: #fce138;
+}
+
+header nav {
+  margin: 7px 0; 
 }
 
 header nav ul {
@@ -49,11 +52,6 @@ header nav ul {
   align-items: center;
   list-style: none;
 }
-
-header nav {
-  margin: 7px 0; 
-}
-
 
 header nav ul li a {
   padding: 10px 15px;
@@ -69,31 +67,22 @@ header nav ul li a:hover {
   text-shadow: none;
 }
 
-.hero {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding:60px;
-  background-image: url(../image/hero-bg.jpg);
-  background-size: cover;
-  background-position:center;
- }
-
-.hero-form {
-  color: #024e76; 
-  background-color: rgba(252, 225, 56, 0.8);
-  padding: 20px; 
-  border-style:solid; 
-  border-width: 3px;
-  border-color: #024e76; 
-  width: 40%;
-  margin: 3.5%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  border-radius: 15px;
+section {
+  padding: 60px;
 }
 
-.hero-cta {
+.hero {
+  background-image: url(../image/hero-bg.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  background-attachment: fixed;
+  background-position: 80%;
+ }
+
+ .hero-cta {
   width: 35%;
   text-align: right;
   margin: 3.5%;
@@ -108,7 +97,22 @@ header nav ul li a:hover {
   color: #fce138;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-           
+
+.hero-form {
+  border: 3px solid #024e76; 
+  background-color: rgba(252, 225, 56, 0.8);
+  padding: 20px; 
+  color: #024e76;
+  width: 40%;
+  margin: 3.5%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+}
+
+.hero-form button:hover {
+  background-color: #39a6b2;  
+}
+
 .hero-form h3 {
   font-size: 24px;
   margin:0; 
@@ -148,11 +152,6 @@ header nav ul li a:hover {
   border-radius: 10px;
 }
 
-.hero-form button:hover {
-  background-color: #39a6b2;  
-}
-
-
 .section-title {
   padding-bottom: 20px;
   text-align: center;
@@ -170,7 +169,7 @@ header nav ul li a:hover {
 
 .secondary-border {
   border-color: #39a6b2;
-  }
+}
 
 .intro p {
   line-height: 1.7;
@@ -180,6 +179,10 @@ header nav ul li a:hover {
   margin: 0 auto;
   text-align: center;
 }
+
+.steps {
+  background: #fce138;
+ }
 
 .step {
   margin: 50px auto;
@@ -196,9 +199,6 @@ header nav ul li a:hover {
   border-bottom:none;
 }
 
-.steps {
- background: #fce138;
-}
 
 .step-info {
   display: flex;
